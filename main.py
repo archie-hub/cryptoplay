@@ -182,6 +182,8 @@ def update_tables(_, min_amount):
     min_amount = float(min_amount)
 
     # Filter the transactions based on the slider amount
+    # If I watch this enough I'll get a list of the big exchanges and
+    # then I can put them here.
     filtered_tx_data = [tx for tx in tx_data if tx["Amount"]]
     filtered_highest_tx_data = [
         tx for tx in highest_tx_data if tx["Amount"] >= min_amount
